@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Egedal | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Hi, I'm Simon Egedal – a web developer crafting responsive and modern web apps using HTML, CSS, JavaScript, and React. Check out my work and get in touch.">
+    <meta name="keywords" content="Simon Egedal, web developer, portfolio, frontend developer, backend developer, React, Firebase, Billund, Denmark">
+    <meta name="author" content="Simon Egedal">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-logo">Simon<span>E</span></div>
+            <div class="loading-bars">
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+            </div>
+            <div class="loading-text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Simon<span>E</span></a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#github">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Simon Egedal</h1>
+                <p>A passionate web developer crafting modern, responsive web applications using cutting-edge technologies like React, JavaScript, and Node.js.</p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                    <a href="#github" class="btn btn-secondary">
+                        <i class="fab fa-github"></i>
+                        View My Work
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="parallax-bg"></div>
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>About Me</h2>
+                <p>Get to know more about my journey and passion for web development</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img scroll-reveal-left">
+                    <img src="picture.jpg" alt="Simon Egedal">
+                </div>
+                <div class="about-text scroll-reveal-right">
+                    <h3>Crafting Digital Experiences</h3>
+                    <p>I'm a web developer based in Billund, Denmark, with a passion for creating beautiful, functional, and user-friendly websites and applications.</p>
+                    <p>My journey in web development started with curiosity and has evolved into a deep love for problem-solving and bringing ideas to life through code.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying the beautiful Danish countryside.</p>
+                    <a href="#contact" class="btn">
+                        <i class="fas fa-coffee"></i>
+                        Let's Chat
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>My Skills</h2>
+                <p>Technologies and tools I use to bring projects to life</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card scroll-reveal stagger-delay-1">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h4 class="skill-title">Frontend Development</h4>
+                    <p class="skill-desc">React, JavaScript, HTML5, CSS3, and modern frontend frameworks to create responsive and interactive user interfaces.</p>
+                </div>
+                <div class="skill-card scroll-reveal stagger-delay-2">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4 class="skill-title">Backend Development</h4>
+                    <p class="skill-desc">Node.js, Express, and database management to build robust server-side applications and APIs.</p>
+                </div>
+                <div class="skill-card scroll-reveal stagger-delay-3">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h4 class="skill-title">Database Management</h4>
+                    <p class="skill-desc">MongoDB, Firebase, and SQL databases for efficient data storage and retrieval solutions.</p>
+                </div>
+                <div class="skill-card scroll-reveal stagger-delay-4">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4 class="skill-title">Responsive Design</h4>
+                    <p class="skill-desc">Mobile-first approach ensuring seamless user experience across all devices and screen sizes.</p>
+                </div>
+                <div class="skill-card scroll-reveal stagger-delay-5">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h4 class="skill-title">Version Control & Collaboration</h4>
+                    <p class="skill-desc">Git, GitHub, and collaborative development workflows for efficient team-based project management and code versioning.</p>
+                </div>
+                <div class="skill-card scroll-reveal stagger-delay-6">
+                    <div class="skill-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h4 class="skill-title">Performance Optimization</h4>
+                    <p class="skill-desc">Code optimization, lazy loading, and performance monitoring to deliver fast, efficient web applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section class="github section" id="github">
+        <div class="container">
+            <div class="github-content scroll-reveal-scale">
+                <div class="github-icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <div class="github-text">
+                    <h3>Check Out My Projects</h3>
+                    <p>Explore my latest work and contributions on GitHub. From personal projects to open-source contributions, see what I've been building.</p>
+                </div>
+                <a href="https://github.com/simonegedal" target="_blank" class="github-btn btn">
+                    <i class="fab fa-github"></i>
+                    Visit My GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-title scroll-reveal">
+                <h2>Get In Touch</h2>
+                <p>Let's discuss your next project or just say hello</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item scroll-reveal-left stagger-delay-1">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>egedal@workmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item scroll-reveal-left stagger-delay-2">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Billund, Denmark</p>
+                        </div>
+                    </div>
+                    <div class="contact-item scroll-reveal-left stagger-delay-3">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+45 20 20 80 94</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form scroll-reveal-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Simon<span>E</span></div>
+                <div class="social-links">
+                    <a href="https://github.com/simonvegedal" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Simon Egedal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#hero" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="JS/script.js"></script>
+    <script src="JS/contact.js"></script>
+</body>
+</html>
